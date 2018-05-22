@@ -14,9 +14,9 @@ def getData(f):
 def thoseInRange(data, lower, upper):
     students = []
     for [number, mark] in data:
-        if lower <= mark <= upper:
+        if lower <= mark < upper:
             students.append(number)
-    if len(students) = 0: students = ["none"]
+    if len(students) == 0: students = ["none"]
     return students
 
 
